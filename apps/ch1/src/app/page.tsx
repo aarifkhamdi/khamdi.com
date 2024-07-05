@@ -1,14 +1,7 @@
-import Link from 'next/link';
-import styles from './page.module.css';
-
 export default function Index() {
   return (
-    <nav>
-      <ul className={styles.list}>
-        <li className={styles.item}>
-          <Link href="/thinking-in-react">Thinking in React</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="flex items-center justify-center h-screen">
+      <h1 className="text-xl">Hello</h1>
+    </div>
   );
 }
