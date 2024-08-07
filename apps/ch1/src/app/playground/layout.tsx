@@ -10,17 +10,29 @@ export default function PlaygroundLayout({
 }) {
   const pathname = usePathname();
   const isOnPlayground = pathname === '/playground';
+  const isOnQrCodeComponent = pathname === '/playground/qr-code-component';
+
+  if (isOnQrCodeComponent) {
+    return <>{children}</>;
+  }
 
   return (
     <>
       <nav>
         <ul>
           {isOnPlayground ? (
-            <li>
-              <Link href="/playground/thinking-in-react">
-                Thinking in React
-              </Link>
-            </li>
+            <>
+              <li>
+                <Link href="/playground/thinking-in-react">
+                  Thinking in React
+                </Link>
+              </li>
+              <li>
+                <Link href="/playground/qr-code-component">
+                  Qr code component
+                </Link>
+              </li>
+            </>
           ) : (
             <li>
               <Link href="/playground">Playground</Link>
