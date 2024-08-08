@@ -13,7 +13,7 @@ export default function PlaygroundLayout({
   const isOnQrCodeComponent = pathname === '/playground/qr-code-component';
 
   if (isOnQrCodeComponent) {
-    return <>{children}</>;
+    return <main>{children}</main>;
   }
 
   return (
@@ -40,7 +40,7 @@ export default function PlaygroundLayout({
           )}
         </ul>
       </nav>
-      {children}
+      <main>{children}</main>
     </>
   );
 }
