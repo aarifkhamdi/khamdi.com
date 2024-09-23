@@ -14,7 +14,7 @@ export default function Page(args: {
     async function f() {
       const paddleInstance = await initializePaddle({
         environment: 'sandbox',
-        token: 'test_f29680532061fbd57a67ce03bbd',
+        token: 'test_ef097305fa1f0103cf9f0453dc1',
       });
 
       if (paddleInstance) {
