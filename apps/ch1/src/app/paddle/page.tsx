@@ -34,6 +34,7 @@ export default function Page(args: {
       customer: {
         address: {
           countryCode: 'GB',
+          postalCode: '45006',
         },
         email: 'aarifkhamdi@gmail.com',
       },
