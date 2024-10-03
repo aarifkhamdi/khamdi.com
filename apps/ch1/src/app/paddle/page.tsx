@@ -26,6 +26,17 @@ export default function Page(args: {
 
   const transactionId = searchParams['_ptxn'];
   if (typeof transactionId === 'string') {
-    paddle?.Checkout.open({ transactionId });
+    paddle?.Checkout.open({
+      transactionId,
+      settings: {
+        allowLogout: false,
+      },
+      customer: {
+        address: {
+          countryCode: 'US',
+        },
+        email: 'aarifkhamdi@gmail.com',
+      },
+    });
   }
 }
