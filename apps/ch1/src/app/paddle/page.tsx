@@ -28,16 +28,6 @@ export default function Page(args: {
   if (typeof transactionId === 'string') {
     paddle?.Checkout.open({
       transactionId,
-      settings: {
-        allowLogout: false,
-      },
-      customer: {
-        address: {
-          countryCode: 'US',
-          postalCode: 'test123123',
-        },
-        email: 'aarifkhamdi@gmail.com',
-      },
     });
   }
 }
