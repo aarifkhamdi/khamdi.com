@@ -33,7 +33,7 @@ export default function Page(args: {
       },
       customer: {
         address: {
-          countryCode: 'US',
+          countryCode: 'UK',
         },
         email: 'aarifkhamdi@gmail.com',
       },
