@@ -33,8 +33,8 @@ export default function Page(args: {
       },
       customer: {
         address: {
-          countryCode: 'GB',
-          postalCode: '45006',
+          countryCode: 'US',
+          postalCode: 'test123123',
         },
         email: 'aarifkhamdi@gmail.com',
       },
